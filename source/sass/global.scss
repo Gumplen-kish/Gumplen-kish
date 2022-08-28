@@ -1,0 +1,131 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+
+/* Lato-400 - latin */
+@font-face {
+  font-family: "Lato";
+  src        : local('Lato-Regular'),
+      url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style : normal;
+}
+
+/* Lato-Semibold-600 - latin */
+@font-face {
+  font-family: "Lato";
+  src        : local('Lato-Semibold'),
+      url('../fonts/Lato-Semibold.eot?#iefix') format('embedded-opentype');
+  font-weight: 600;
+  font-style : normal;
+}
+
+
+/* Lato-700 - latin */
+@font-face {
+  font-family: "Lato";
+  src        : local('Lato-Bold'),
+      url('../fonts/Lato-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: 700;
+  font-style : normal;
+}
+
+/* Lato-Heavy-800 - latin */
+@font-face {
+  font-family: "Lato";
+  src        : local('Lato-Heavy'),
+      url('../fonts/Lato-Heavy.eot?#iefix') format('embedded-opentype');
+  font-weight: 800;
+  font-style : normal;
+}
+
+$lato: 'Lato', sans-serif;
+
+
+body {
+  margin: 0 auto;
+  font-family: $lato;
+  font-weight: normal;
+}
+
+main {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 375px;
+
+  @media(max-width: 1440px) {
+    padding: 0 150px;
+  }
+
+  @media(max-width: 1024px) {
+    padding: 0 30px;
+  }
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  /*Позиционирование*/
+  position: absolute;
+  /*Блочная модель*/
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  /*Разное*/
+  white-space: nowrap;
+  clip-path: inset(100%);
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+form {
+  margin-top: 80px;
+  height: 100%;
+}
+
+select, option, input {
+  position: relative;
+  max-width: 370px;
+  width: 100%;
+  background: $silver 85%;
+  padding: 12px 10px;
+  border: 1px solid $white-color;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 22px;
+  color: $jaguar;
+}
+
+select {
+  width: 100%;
+  max-width: 370px;
+  height: 48px;
+}
+
+option {
+  background-color: $blue-zodiac;
+  color: $white-color;
+
+  &:hover {
+    background: transparent;
+    color: $summer-sky-option;
+  }
+}
+
+input {
+  &::placeholder {
+    color: $jaguar;
+  }
+}
+
+

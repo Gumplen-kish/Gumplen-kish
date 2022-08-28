@@ -1,0 +1,80 @@
+.info-circles {
+  margin-top: 80px;
+  display: flex;
+  gap: 41px;
+  flex-wrap: wrap;
+}
+@media (max-width: 1150px) {
+  .info-circles {
+    justify-content: center;
+  }
+}
+.info-circles__item {
+  display: flex;
+  max-width: 188px;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+@media (max-width: 1150px) {
+  .info-circles__item {
+    margin-bottom: 3px;
+  }
+}
+.info-circles__block {
+  border: solid 5px #286690;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:  url("../img/procent.png") no-repeat $summer-sky-span;
+  background-size: 31px 31px;
+  background-position: 50% 50%;
+
+  &--search {
+    background:  url("../img/search.png") no-repeat $summer-sky-span 50% 50%;
+  }
+
+  &--doc {
+    background:  url("../img/doc.png") no-repeat $summer-sky-span 50% 50%;
+  }
+
+  &--mail {
+    background:  url("../img/mail.png") no-repeat $summer-sky-span 50% 50%;
+  }
+
+  &--money {
+    background:  url("../img/money.png") no-repeat $summer-sky-span 50% 50%;
+  }
+}
+.info-circles__txt {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: white;
+  
+  margin-top: 20px;
+}
+.info-circles__dots {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  right: -92px;
+  top: 44px;
+}
+@media (max-width: 1440px) {
+  .info-circles__dots {
+    display: none;
+  }
+}
+.info-circles__point {
+  height: 6px;
+  width: 6px;
+  background-color: #bbbbbb;
+  border-radius: 6px;
+  margin: 0 20px 0 0;
+}

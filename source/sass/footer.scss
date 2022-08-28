@@ -1,0 +1,117 @@
+.footer {
+  display: block;
+  padding: 30px 0;
+  width: 100%;
+  background-color: $blue-zodiac;
+  z-index: 3;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 38px;
+
+    @media(max-width: 1024px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+
+  &__copyright {
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    color: $white-color;
+  }
+
+  &__money {
+    position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      width: 1px;
+      height: 100%;
+      background-color: $silver;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 1px;
+      height: 100%;
+      background-color: $silver;
+    }
+
+    @media(max-width: 1024px) {
+      padding: 0;
+
+      &::after,
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &__money,
+  &__contacts {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    
+    list-style: none;
+
+    @media(max-width: 1440px) {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    & li {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      color: $white-color;
+
+      & svg {
+        width: 20px;
+        height: 20px;
+        fill: $summer-sky-span;
+      }
+
+      & span {
+        font-size: 13px;
+        line-height: 16px;
+        white-space: nowrap;
+        
+      }
+
+      & a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        font-family: $lato;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 15px;
+        color: $white-color;
+        white-space: nowrap;
+    
+        &:hover,
+        &:focus {
+          transition: color 0.3s ease;
+          color: #43ABF0;
+          border-color: transparent;
+        }
+      }
+    }
+  }
+}

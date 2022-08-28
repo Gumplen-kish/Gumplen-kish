@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Тест Soft-NSK</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="fonts/LatoLatin-Regular.woff" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="page-header container">
+    <a class="page-header__logo">
+      <svg  width="247" height="35">
+        <use xlink:href="img/sprite.svg#icon-logo"></use>
+      </svg>
+    </a>
+    <nav class="page-header__nav main-nav">
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__item-elem" href="#">Бизнес</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-elem" href="#">О нас</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-elem" href="#">Цены</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__item-elem" href="#">Оформить заказ</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="preview">
+      <div class="preview__container container">
+        <h1><span>Lorem ipsum</span> dolor sit amet&nbsp;consectetur <span>adipiscing</span></h1>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+        <ul class="preview__list">
+          <li>Totam rem aperiam eaque ipsa</li>
+          <li>Sit voluptatem accusantium doloremque laudantium</li>
+          <li>Sed ut perspiciatis, unde omnis iste natus error</li>
+        </ul>
+        <div class="preview__wrap-button">
+          <button type="button" name="order">Заказать</button>
+          <button type="button" name="detailed">Подробнее</button>
+        </div>
+      </div>
+    </div>
+    <div class="order">
+      <div class="order__container container">
+        <div class="order__title-wrap">
+          <h2>Оформление <span>заказа</span></h2>
+          <p>Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+        </div>
+
+        <div class="info-circles">
+          <div class="info-circles__item">
+            <div class="info-circles__block info-circles__block--search">
+            </div>
+            <p class="info-circles__txt">Lorem ipsum dolor sit amet</p>
+            <div class="info-circles__dots">
+              <div class="info-circles__point"></div>
+              <div class="info-circles__point"></div>
+              <div class="info-circles__point"></div>
+              <div class="info-circles__point"></div>
+              <div class="info-circles__point"></div>
+            </div>
+          </div>
+          <div class="info-circles__item">
+            <div class="info-circles__block info-circles__block--procent">
+            </div>
+            <p class="info-circles__txt">Сonsecteturadipiscing elit</p>
+            <div class="info-circles__dots">
+              <div class="info-circles__point"></div>
+              <div class="info-circles__point"></div>
+              <div class="info-circles__point"></div>
+              <div class="info-circles__point"></div>
+              <div class="info-circles__point"></div>
+            </div>
+          </div>
+          <div class="info-circles__item">
+            <div class="info-circles__block info-circles__block--doc">
+            </div>
+            <p class="info-circles__txt">Sed do eiusmod tempor</p>
+            <div class="info-circles__dots">
+              <div class="info-circles__point"></div>
+              <div class="info-circles__point"></div>
+              <div class="info-circles__point"></div>
+              <div class="info-circles__point"></div>
+              <div class="info-circles__point"></div>
+            </div>
+          </div>
+          <div class="info-circles__item">
+            <div class="info-circles__block info-circles__block--mail">
+            </div>
+            <p class="info-circles__txt">Esse cillum doloreeu fugiat</p>
+            <div class="info-circles__dots">
+              <div class="info-circles__point"></div>
+              <div class="info-circles__point"></div>
+              <div class="info-circles__point"></div>
+              <div class="info-circles__point"></div>
+              <div class="info-circles__point"></div>
+            </div>
+          </div>
+          <div class="info-circles__item">
+            <div class="info-circles__block info-circles__block--money">
+            </div>
+            <p class="info-circles__txt">Excepteur sint occaecat cupidatat non proident</p>
+          </div>
+        </div>
+        <form action="" method="post" class="form">
+          <div class="form__wrap">
+            <select name="" id="">
+              <option value="1">Выберите тип системы</option>
+              <option value="2">Sed ut perspiciatis</option>
+              <option value="3">Nemo enim ipsam</option>
+              <option value="4">Et harum quidem</option>
+              <option value="5">Temporibus autem</option>
+              <option value="6">ltaque earum rerum</option>
+            </select>
+            <div class="form__wrap-elem">
+              <label for="mail"></label>
+              <input type="text" id="mail" name="usermail" placeholder="Ваш e-mail" required>
+            </div>
+            <div class="form__wrap-elem">
+              <label for="username"></label>
+              <input type="text" id="username" name="username" placeholder="Ваше имя" required>
+            </div>
+          </div>
+          <div class="form__range-box">
+            <div class="form__range-box-wrap">
+              <label for="form__range" class="form__range-label">Sed ut perspiciatis, unde omnis iste natus</label>
+              <span class="form__range-result">75%</span>
+              <input type="range" id="form__range" class="form__range" min="0" max="100" step="1" value="75">
+            </div>
+            <div class="form__file-wrap">
+              <input type="file" name="file" id="file" class="form__file">
+              <label for="file">
+                <img src="img/doc-file.png" alt="Прикрепить файл" width="17" height="20">
+                <span class="form__file-span">Прикрепить файл</span>
+              </label>
+            </div>
+          </div>
+          <button class="form__btn"> Отправить</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrap container">
+      <p class="footer__copyright">© 2018 «LOREMIPSUM.NET» Все права защищены.</p>
+      <ul class="footer__money">
+        <li>
+          <svg  width="20" height="20">
+            <use xlink:href="img/sprite.svg#icon-qiwi"></use>
+          </svg>
+          <span>QIWI-wallet</span>
+        </li>
+        
+        <li>
+          <svg  width="20" height="20">
+            <use xlink:href="img/sprite.svg#icon-yandex"></use>
+          </svg>
+          <span>Yandex Money</span>
+        </li>
+        <li>
+          <svg  width="20" height="20">
+            <use xlink:href="img/sprite.svg#icon-webmoney"></use>
+          </svg>
+          <span>Web Money</span>
+        </li>
+      </ul>
+      <ul class="footer__contacts">
+        <li>
+          <a href="#">
+            <svg  width="20" height="20">
+              <use xlink:href="img/sprite.svg#icon-email"></use>
+            </svg>
+            <span>info@ipsum228.com</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg  width="20" height="20">
+              <use xlink:href="img/sprite.svg#icon-vk"></use>
+            </svg>
+            <span>Мы вконтакте</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
